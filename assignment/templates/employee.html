@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+     <style>
+      body { background-color:cyan;}
+
+        h1 { color:black;
+        text-align:center;
+        font-family:Arial;
+        font-size: 80px;
+        font-family:Times;}
+      </style>
+</head>
+<body>
+
+<form action="employee", method="POST" >
+      {% csrf_token %}
+        name: <input type="text" name="name" placeholder="Name"><br><br>
+        address: <input type="text" name="address" placeholder="Address"><br><br>
+        salary: <input type="text" name="salary" placeholder="salary"><br><br>
+
+
+        <input type="submit" value="Add">
+</form>
+<br>
+<h4>Employees:</h4>
+<br>
+{% for i in s2  %}
+
+{{i.id}}
+{{i.name }}
+{{i.address}}
+{{i.salary }}
+{{i.seniormanagement }}
+<br>
+
+
+{% endfor %}
+
+
+</body>
+</html>
+

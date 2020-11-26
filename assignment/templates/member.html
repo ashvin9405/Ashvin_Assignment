@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>members</title>
+     <style>
+      body { background-color:brown;}
+
+        h1 { color:black;
+        text-align:center;
+        font-family:Arial;
+        font-size: 80px;
+        font-family:Times;}
+      </style>
+</head>
+<body>
+
+<form action="members", method="POST" >
+      {% csrf_token %}
+        name: <input type="text" name="name" placeholder="Name"><br><br>
+        age: <input type="integer" name="age" placeholder="Age"><br><br>
+
+
+        <input type="submit" value="Register">
+</form>
+<br>
+Members:
+<br>
+{% for i in s1  %}
+
+{{i.id}}
+{{i.name }}
+{{i.age}}
+<br>
+
+
+{% endfor %}
+
+
+</body>
+</html>

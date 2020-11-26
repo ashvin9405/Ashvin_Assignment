@@ -1,0 +1,186 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>hello</title>-->
+<!--    <style>-->
+<!--        body { background-color: PowderBlue;  }-->
+
+<!--        h1 { color:Red;-->
+<!--        text-align:center;-->
+<!--        font-family:Arial;-->
+<!--        font-size: 80px;}-->
+
+<!--        p { color:MidnightBlue;-->
+<!--           text-align:left;-->
+<!--           font-family:Arial;-->
+<!--           font-size: 40px}-->
+
+<!--        .button_1 {-->
+<!--          background-color: #4CAF51; /* Green */-->
+<!--          border: none;-->
+<!--          color: white;-->
+<!--          padding: 15px 32px;-->
+<!--          text-align: center;-->
+<!--          text-decoration: none;-->
+<!--          display: inline-block;-->
+<!--          font-size: 16px}-->
+
+<!--    </style>-->
+<!--</head>-->
+
+
+<!--<body>-->
+<!--        <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--  <a class="navbar-brand" href="#">Navbar</a>-->
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+
+<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--    <ul class="navbar-nav mr-auto">-->
+<!--      <li class="nav-item active">-->
+<!--        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#">Link</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item dropdown">-->
+<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--          Dropdown-->
+<!--        </a>-->
+<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--          <a class="dropdown-item" href="#">Action</a>-->
+<!--          <a class="dropdown-item" href="#">Another action</a>-->
+<!--          <div class="dropdown-divider"></div>-->
+<!--          <a class="dropdown-item" href="#">Something else here</a>-->
+<!--        </div>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link disabled" href="#">Disabled</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--    <form class="form-inline my-2 my-lg-0">-->
+<!--      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</nav>-->
+<!--        <h1> Homepage</h1>-->
+<!--        <p> Hey {{xyz}}!! </p>-->
+<!--        <input type="button" class="button_1" value="Click Me!!">-->
+<!--        <a href ={{link}} >{{page}}</a>-->
+<!--        <form action="expression" method="POST">-->
+<!--             {% csrf_token %}-->
+<!--            first No:<input type="text" name="text1">-->
+<!--            Second No:<input type="text" name="text2">-->
+<!--            <input type="submit" value="Add">-->
+
+<!--        </form>-->
+
+<!--        <a href="app2/signup">Sign Up</a>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Home</title>
+      <style>
+      body { background-color:brown;}
+
+        h1 { color:Black;
+        text-align:center;
+        font-family:Arial;
+        font-size: 80px;
+        font-family:Times;}
+      </style>
+  </head>
+  <body>
+    <h1>MindBowser</h1>
+
+     <div style = "position:absolute; left:1200px; top:50px; background-color:dark; text-color:white">
+       <strong  >contact: 9405779777</strong>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--  <a class="navbar-brand" href="#">Home</a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="app2/employee">Employee</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+
+          <a class="dropdown-item" href="app2/overview">Overview</a>
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!--    https://www.hdwallpapers.in/download/under_construction_in_green_background_hd_inspirational-1920x1080.jpg-->
+    <img src="https://www.hdwallpapers.in/download/under_construction_in_green_background_hd_inspirational-1920x1080.jpg"
+         alt="Responsive image"style="width:1600px;height:400px;">
+
+    {% if user.is_authenticated %}
+        <div style = "position:absolute; left:900px; top:121px; background-color:dark">
+         <a href="app2/logout">Logout</a>
+        </div>
+        <div style = "position:absolute; left:1000px; top:121px; background-color:dark">
+            <p style="color:white; font-family:Times New Roman" >Hey {{user.username}}</p>
+        </div>
+
+    {% else %}
+        <div style = "position:absolute; left:1050px; top:121px; background-color:dark">
+             <a href="app2/signup">Manager Sign Up</a>
+        </div>
+
+        <div style = "position:absolute; left:900px; top:121px; background-color:dark">
+             <a href="app2/login">Manager Login</a>
+        </div>
+
+    {% endif %}
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
