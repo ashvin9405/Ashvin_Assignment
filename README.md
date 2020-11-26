@@ -1,12 +1,13 @@
 # MindBowser_Assignment
-requirements: Pycharm/spider IDE
-              POSTGRES Database
-              PG Admin (POSTGRES DAtabase Interface)
+requirements: 1. Pycharm/spider IDE
+              2. POSTGRES Database
+              3. PG Admin (POSTGRES DAtabase Interface)
               
 go to assignment folder and run command in pycharm terminal:
     python manage.py runserver
     
 for existing manager login from frontend:
+
 username: mindbowser
 password:12345
 
@@ -21,7 +22,7 @@ password:12345
               
 new admin can be created usin python manage.py createsuperuser in pycharm terminal
 
-employee can be added by both: 1 frontend: employee can register himself
-                               2 backend: manager can add employee using admin panel
+employee can be added by both: 1. frontend: employee can register himself
+                               2. backend: manager can add employee using admin panel
                                
 employee list is fetched from the database and and displayed on the employee page.                               
