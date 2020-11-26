@@ -26,7 +26,7 @@ def login(request):
     else:
 
         return render(request,'login.html')
-        # return redirect('login')
+        
 
 def signup(request):
     if request.method=='POST':
@@ -58,13 +58,6 @@ def signup(request):
         return render(request, 'signup.html')
 
 
-    #     x=User.objects.create_user(username=username,last_name=lastName,first_name=firstName,email=email,password=password)
-    #     x.save()
-    #     return redirect('/')
-    # else:
-    #     return render(request,'signup.html')
-
-
 def logout(request):
     auth.logout(request)
     return redirect('/')
@@ -83,4 +76,4 @@ def employee(request):  #here members is name of function
         emp = Employee.objects.all()       # p contains all the objects(rows) in the Membership table
         return render(request,'employee.html',{"s2":emp})
 
-# Create your views here.
+
